@@ -298,6 +298,22 @@ span .container{
     justify-content: center;
 }
 
+.specialties .local-left .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+} 
+
+.specialties .local-left{
+    display: block;
+    width: 100%;
+} 
+
+.specialties .local-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .specialties .local-left h2{
     font-size: 20px;
     font-weight: 600;
@@ -339,31 +355,38 @@ span .container{
     width: 180px;
     height: auto;
     /* bottom: 140px; */
+    border-radius: 50%;
     left: 50px;
     object-fit: cover;
     object-position: center;
     background-repeat: no-repeat;
-    /* position: absolute; */
     box-shadow: 0 20px 20px yellowgreen;
 }
 
-.specialties .local-left .card-list{
+.specialties .local-left .food-title h3{
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+/* Foriegn */
+
+.specialties .foriegn-right .card-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.specialties .local-left{
+.specialties .foriegn-right{
     display: block;
     width: 100%;
 }
 
-.specialties .local-left .info{
+.specialties .foriegn-right .info{
     max-width: 100%;
     display: flex;
     flex-direction: column;
 }
-
-/* Foriegn */
 .specialties .foriegn-right h2{
     font-size: 20px;
     font-weight: 600;
@@ -390,44 +413,47 @@ span .container{
     color:black;
 }
 
-.specialties .card-list .card{
-    width: 200px;
-    height: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 10px;
-    position: relative;
-    background: #ffffff;
-    outline: 2px solid yellowgreen;
-    gap: 10px;
-}
 
-.specialties .card-list .card img{
+.specialties .foriegn-right  img{
     width: 180px;
     height: auto;
-    /* bottom: 140px; */
+    border-radius: 50%;
     left: 50px;
     object-fit: cover;
     object-position: center;
     background-repeat: no-repeat;
-    /* position: absolute; */
     box-shadow: 0 20px 20px yellowgreen;
 }
 
-.specialties .foriegn-right .card-list{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.specialties .foriegn-right .food-title h3{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    
 }
 
-.specialties .foriegn-right{
-    display: block;
-    width: 100%;
-}
-
-.specialties .foriegn-right .info{
-    max-width: 100%;
+.active4::after{
+    content: '';
+    width: 10%;
+    height: 5px;
+    background-color: yellowgreen;
     display: flex;
-    flex-direction: column;
+    position: relative;
+    margin-left: 10px;
 }
+
+.grid .info h1{
+    margin-bottom: 30px;
+    font-family:sans-serif;
+
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+  
+
+
 
   
