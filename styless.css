@@ -249,7 +249,7 @@ input{
 
 span .container{
     
-     background: url(/images/Food.jpg)  no-repeat;
+     background: url(./images/Food.jpg)  no-repeat;
       background-color:  rgba(0, 0, 0, 0.5); 
       background-blend-mode: darken;
      background-size: cover;
